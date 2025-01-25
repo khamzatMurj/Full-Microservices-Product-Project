@@ -19,6 +19,7 @@ class ProductServiceApplicationTests {
 
 	@BeforeEach
 	void setUp() {
+
 		RestAssured.baseURI = "http://localhost";
 		//we make dynamic port allocation
 		//utilisant l'injection de dependance

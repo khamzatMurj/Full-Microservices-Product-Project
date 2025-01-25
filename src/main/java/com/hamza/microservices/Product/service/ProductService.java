@@ -28,6 +28,7 @@ public class ProductService {
                 .Description(productRequest.Description())
                 .price(productRequest.price())
                 .build();
+
         productRepository.save(product);
         log.info("Product {} is saved", product.getId());
         return new ProductResponse(product.getId(), product.getName()
